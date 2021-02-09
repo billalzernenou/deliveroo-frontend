@@ -1,1 +1,169 @@
 /* Other rules */
+:root {
+  --dark-grey: #2e3333;
+  --light-grey: #868a8a;
+}
+.App {
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+}
+h1 {
+  color: var(--dark-grey);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0.6rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  color: var(--dark-grey);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  color: var(--dark-grey);
+  font-weight: bold;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--light-grey);
+}
+/*------------------------------------------------------*/
+/*-------------------------TOPBAR-----------------------*/
+/*------------------------------------------------------*/
+.top-bar {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+.top-bar .logo {
+  width: 80%;
+  margin: 0 auto;
+}
+.top-bar .logo img {
+  height: 42px;
+  box-sizing: border-box;
+}
+
+/*------------------------------------------------------*/
+/*-------------------------HEADER-----------------------*/
+/*------------------------------------------------------*/
+
+.header {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+}
+.header div:first-child {
+  flex: 3;
+  padding-right: 25px;
+}
+.header div:last-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header div:last-child img {
+  width: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+
+/*------------------------------------------------------*/
+/*-------------------------Meals-----------------------*/
+/*------------------------------------------------------*/
+
+.main {
+  display: flex;
+  background-color: #f3f5f5;
+}
+.main .meals {
+  width: 80%;
+  margin: 0 auto;
+}
+.main .meals .category {
+  width: 70%;
+}
+.main .meals .category .meal-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .meals .category .meal-items .meal-item {
+  width: calc(50% - 5px);
+  display: flex;
+  margin-bottom: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.main .meals .category .meal-items .meal-item:nth-child(2n) {
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+.main .meals .meal-items .meal-item div:first-child {
+  padding: 0 20px;
+  min-width: 230px;
+}
+
+.main .meals .meal-items .meal-item div:first-child p {
+  height: 30px;
+  overflow: hidden;
+  font-size: 0.9rem;
+  color: #808484;
+  line-height: 1.3rem;
+  height: 2.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.5rem;
+}
+.main .meals .meal-items .meal-item div:first-child div .price {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  height: 2.6rem;
+  margin-top: 0.5rem;
+  margin-right: 10px;
+}
+.main .meals .meal-items .meal-item div:first-child div {
+  display: flex;
+  justify-content: flex-start;
+}
+.main .meals .meal-items .meal-item div:first-child div p:last-child {
+  color: #ff8000;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.main .meals .meal-items .meal-item div .picture {
+  height: 130px;
+  width: 130px;
+}
+.main .meals .meal-items .meal-item .picture img {
+  height: 100%;
+  width: 100%;
+  height: 130px;
+  width: 130px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+/*------------------------------------------------------*/
+/*-------------------------FOOTER-----------------------*/
+/*------------------------------------------------------*/
+.footer {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
