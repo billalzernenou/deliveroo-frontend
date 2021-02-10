@@ -89,6 +89,7 @@ p {
   display: flex;
   width: 1200px;
   margin: 0 auto;
+  align-items: flex-start;
 }
 .content .menu {
   flex: 7;
@@ -122,8 +123,8 @@ p {
 }
 
 .content .menu .meal-items .meal-item div:first-child {
-  /* padding: 0 20px; */
-  /* min-width: 230px; */
+  padding: 0 20px;
+  min-width: 230px;
 }
 
 .content .menu .meal-items .meal-item div:first-child p {
