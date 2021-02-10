@@ -1,6 +1,6 @@
-const Header = ({ name, description, picture }) => {
+const Hero = ({ name, description, picture }) => {
   return (
-    <div className="header">
+    <div className="hero">
       <div>
         <h1> {name}</h1>
         <p>{description}</p>
@@ -12,4 +12,4 @@ const Header = ({ name, description, picture }) => {
   );
 };
 
-export default Header;
+export default Hero;
